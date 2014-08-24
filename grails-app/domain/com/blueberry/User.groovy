@@ -6,16 +6,24 @@ class User {
 
 	String username
 	String password
+
+    String fullName
+    String email
+
+    RoleType roleType = RoleType.ROLE_USER;
+
 	boolean enabled = true
 	boolean accountExpired
 	boolean accountLocked
 	boolean passwordExpired
 
-	static transients = ['springSecurityService']
+	static transients = ['springSecurityService', 'roleType']
 
 	static constraints = {
-		username blank: false, unique: true
-		password blank: false
+		username        size: 5..15, blank: false, unique: true
+		password        minSize: 5, blank: false
+        email           email: true, nullable: true
+        fullName        nullable: true
 	}
 
 	static mapping = {

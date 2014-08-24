@@ -88,10 +88,17 @@ grails.hibernate.osiv.readonly = false
 environments {
     development {
         grails.logging.jul.usebridge = true
+
+        grails.serverURL = "http://localhost:8080/${appName}"
     }
     production {
         grails.logging.jul.usebridge = false
-        // TODO: grails.serverURL = "http://www.changeme.com"
+        // GTG - Changed it to heroku URL, mostly to enable dbconsole in H2
+        grails.serverURL = "http://pure-ridge-5531.herokuapp.com"
+
+        // GTG - to get H2 DB Console in production
+        grails.dbconsole.enabled = true
+        grails.dbconsole.urlRoot = '/dbconsole'
     }
 }
 
@@ -145,6 +152,7 @@ grails.plugin.springsecurity.controllerAnnotations.staticRules = [
 	'/**/js/**':                      ['permitAll'],
 	'/**/css/**':                     ['permitAll'],
 	'/**/images/**':                  ['permitAll'],
-	'/**/favicon.ico':                ['permitAll']
+	'/**/favicon.ico':                ['permitAll'],
+    '/dbconsole/**':                   ['permitAll']         // GTG - For H2 DBConsole
 ]
 

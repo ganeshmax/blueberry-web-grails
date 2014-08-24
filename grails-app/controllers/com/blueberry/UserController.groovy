@@ -3,6 +3,8 @@ package com.blueberry
 import grails.converters.JSON
 import grails.plugin.springsecurity.annotation.Secured
 import grails.transaction.Transactional
+import static org.springframework.http.HttpStatus.*
+import static org.springframework.http.HttpMethod.*
 
 @Transactional
 class UserController {
@@ -25,9 +27,13 @@ class UserController {
     def save(User user) {
         if(user.hasErrors()) {
             respond user.errors
-        }
-        else {
-            user.save flush:true
+        } else {
+            Role role = Role.where {
+                authority == user.roleType.toString()
+            }.get()
+            user.save()
+
+            UserRole.create user, role
             render status: CREATED
         }
     }
