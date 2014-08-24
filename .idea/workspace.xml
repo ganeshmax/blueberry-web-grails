@@ -39,8 +39,8 @@
       <file leaf-file-name="DataSource.groovy" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/grails-app/conf/DataSource.groovy">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.6074241" vertical-offset="0" max-vertical-offset="889">
-              <caret line="36" column="52" selection-start-line="36" selection-start-column="52" selection-end-line="36" selection-end-column="52" />
+            <state vertical-scroll-proportion="0.96625423" vertical-offset="176" max-vertical-offset="1155">
+              <caret line="69" column="5" selection-start-line="69" selection-start-column="5" selection-end-line="69" selection-end-column="5" />
               <folding />
             </state>
           </provider>
@@ -120,7 +120,7 @@
         <entry file="file://$PROJECT_DIR$/temp/default.txt">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="495">
-              <caret line="25" column="5" selection-start-line="25" selection-start-column="5" selection-end-line="25" selection-end-column="5" />
+              <caret line="3" column="0" selection-start-line="3" selection-start-column="0" selection-end-line="26" selection-end-column="9" />
               <folding />
             </state>
           </provider>
@@ -756,12 +756,12 @@
       <changelist id="acc72c1f-5227-4559-bda6-9edd6245365e" name="Default" comment="" />
       <created>1408807471206</created>
       <updated>1408807471206</updated>
-      <workItem from="1408807474087" duration="18516000" />
+      <workItem from="1408807474087" duration="18732000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="18516000" />
+    <option name="totallyTimeSpent" value="18732000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="53" y="22" width="1867" height="1058" extended-state="6" />
@@ -1175,14 +1175,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/temp/default.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="495">
-          <caret line="25" column="5" selection-start-line="25" selection-start-column="5" selection-end-line="25" selection-end-column="5" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$USER_HOME$/.ideaLibSources/hibernate-core-4.3.5.Final-sources.jar!/org/hibernate/dialect/PostgreSQLDialect.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="345">
@@ -1239,10 +1231,18 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/temp/default.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="495">
+          <caret line="3" column="0" selection-start-line="3" selection-start-column="0" selection-end-line="26" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/grails-app/conf/DataSource.groovy">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.6074241" vertical-offset="0" max-vertical-offset="889">
-          <caret line="36" column="52" selection-start-line="36" selection-start-column="52" selection-end-line="36" selection-end-column="52" />
+        <state vertical-scroll-proportion="0.96625423" vertical-offset="176" max-vertical-offset="1155">
+          <caret line="69" column="5" selection-start-line="69" selection-start-column="5" selection-end-line="69" selection-end-column="5" />
           <folding />
         </state>
       </provider>
