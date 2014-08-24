@@ -1,0 +1,37 @@
+-- Config.groovy
+
+// GTG - Spring Security - Configured
+//grails.plugin.springsecurity.useBasicAuth = true
+//grails.plugin.springsecurity.basic.realmName = "blueberry"
+
+grails.plugin.springsecurity.filterChain.chainMap = [
+//    '/api/**':  'JOINED_FILTERS,-exceptionTranslationFilter',                                   // Basic Auth
+//    '/**':      'JOINED_FILTERS,-basicAuthenticationFilter,-basicExceptionTranslationFilter'    // Form Auth (TODO)
+
+    // Form Auth - For REST Without login and logout URL
+    '/**':      'JOINED_FILTERS'
+]
+
+--resources.groovy
+
+// Place your Spring DSL code here
+beans = {
+
+    // GTG - Grails Spring Security Plugin - Default Configuration and Default Filters etc.
+    // https://github.com/grails-plugins/grails-spring-security-core/blob/master/grails-app/conf/DefaultSecurityConfig.groovy
+    // https://github.com/grails-plugins/grails-spring-security-core/blob/master/SpringSecurityCoreGrailsPlugin.groovy
+
+    // GTG - Added to make the spring security not store authentication info in session. Essentially authenticating for every request
+//    statelessSecurityContextRepository(NullSecurityContextRepository) {}
+//    securityContextPersistenceFilter(SecurityContextPersistenceFilter, ref('statelessSecurityContextRepository')) { }
+
+    // GTG - Added to replace the BasicAuthenticationEntryPoint so that 401 etc will not result in default Tomcat error page
+//    basicAuthenticationEntryPoint(JsonBasicAuthenticationEntryPoint) {
+//        realmName = grailsApplication.config.basic.realmName;
+//    }
+
+
+-- UrlMappings.groovy
+       "/api/users(.$format)?"(resources:'user') {
+            format = "json"
+        }
