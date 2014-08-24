@@ -34,7 +34,7 @@ environments {
             dbCreate = "create-drop"
             driverClassName = "org.postgresql.Driver"
             // TODO: change to this later PostgreSQL82Dialect as PostgreSQLDialect is deprecated
-            dialect = org.hibernate.dialect.PostgreSQLDialect
+            dialect = org.hibernate.dialect.PostgreSQL82Dialect
 
             uri = new URI(System.env.DATABASE_URL?:"postgres://test:test@localhost/test")
 
