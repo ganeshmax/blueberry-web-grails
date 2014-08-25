@@ -1,0 +1,125 @@
+#%RAML 0.8
+---
+title: Blueberry
+baseUri: http://pure-ridge-5531.herokuapp.com
+version: v1
+
+schemas:
+  - user: !include user.schema
+
+resourceTypes:
+  - collection:
+      description: Collection of <<resourcePathName>>
+      get:
+        description: Retrieve a list of <<resourcePathName>>
+        responses:
+          200:
+            description: Success- <<resourcePathName>> retrieved
+            body:
+              application/json:
+                example: <<exampleCollection>>
+      post:
+        description: Create a new <<resourcePathName|!singularize>>
+        body:
+          application/json:
+            schema: <<resourcePathName|!singularize>>
+            example: <<exampleNewItem>>
+        responses:
+          201:
+            description: Success- <<resourcePathName|!singularize>> created
+          422:
+            description: Error- <<resourcePathName|!singularize>> validation errors
+            body:
+              application/json:
+                example: <<exampleItemError>>
+
+  - collection-item:
+      description: <<resourcePathName|!singularize>> Entity
+      get:
+        description: Retrieve a <<resourcePathName|!singularize>> by id
+        responses:
+          200:
+            description: Success- <<resourcePathName|!singularize>> retrieved
+            body:
+              application/json:
+                example: <<exampleItem>>
+          404:
+            description: Error- <<resourcePathName|!singularize>> not found
+
+      put:
+        description: Update a <<resourcePathName|!singularize>> by id
+        body:
+          application/json:
+            schema: <<resourcePathName|!singularize>>
+            example: <<exampleItem>>
+        responses:
+          200:
+          404:
+            description: Error- <<resourcePathName|!singularize>> not found
+          422:
+            description: Error- <<resourcePathName|!singularize>> validation errors
+            body:
+              application/json:
+                example: <<exampleItemError>>
+      delete:
+        description: Delete a <<resourcePathName|!singularize>> by id
+        responses:
+          204:
+            description: Success- <<resourcePathName|!singularize>> deleted
+          404:
+            description: Error- <<resourcePathName|!singularize>> not found
+
+  - readOnlyCollection:
+      description: Collection of <<resourcePathName>>
+      get:
+        description: Retrieve a list of <<resourcePathName>>.
+        responses:
+          200:
+            body:
+              application/json:
+                example: <<exampleCollection>>
+/users:
+  type:
+    collection:
+      exampleCollection:    !include users.sample
+      exampleNewItem:       !include user-new.sample
+      exampleItemError:     !include user-error.sample
+
+  /{id}:
+    type:
+      collection-item:
+        exampleItem:        !include user.sample
+        exampleItemError:   !include user-error.sample
+
+/login:
+  post:
+    description: Login to the application
+    queryParameters:
+      username:
+        description: The login ID for the user
+        example: user-01
+        required: true
+        type: string
+      password:
+        description: The password for the user
+        example: password
+        required: true
+        type: string
+    responses:
+      200:
+        description: Success - Logged In. Use the returned cookie (jsessionid) on all subsequent requests
+      403:
+        description: Error - Forbidden
+        body:
+          application/json:
+            example: |
+              {
+                  "error": {
+                      "code": 403,
+                      "message": "Bad credentials"
+                  }
+              }
+
+/logout:
+  post:
+    description: Logout from the application

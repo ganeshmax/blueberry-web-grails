@@ -1,0 +1,27 @@
+{
+"type": "object",
+"$schema": "http://json-schema.org/draft-04/schema",
+"id": "http://jsonschema.net",
+"required": true,
+"properties": {
+  "username": {
+    "type": "string",
+    "required": true,
+    "minLength": 5,
+    "maxLength": 15
+  },
+  "password": {
+    "type": "string",
+    "required": true,
+    "minLength": 5
+  },
+  "fullName": {
+    "type": "string",
+    "required": false
+  },
+  "email": {
+    "type": "string",
+    "required": false
+  }
+}
+}

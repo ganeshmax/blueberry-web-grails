@@ -1,0 +1,26 @@
+[
+  {
+    "class": "com.blueberry.User",
+    "id": 1,
+    "accountExpired": false,
+    "accountLocked": false,
+    "email": null,
+    "enabled": true,
+    "fullName": null,
+    "password": "$2a$10$KJ5h84d8.BXySY3dCMmDMu0OIAxG8KPq2yawLOEUfDWmeZxSTTdyK",
+    "passwordExpired": false,
+    "username": "admin-01"
+  },
+  {
+    "class": "com.blueberry.User",
+    "id": 2,
+    "accountExpired": false,
+    "accountLocked": false,
+    "email": null,
+    "enabled": true,
+    "fullName": null,
+    "password": "$2a$10$dSzf0RO7m1DY8ifogaPyOeJWWPgfSJWSbRaqEboGFJlg5adjiFraS",
+    "passwordExpired": false,
+    "username": "user-01"
+  }
+]

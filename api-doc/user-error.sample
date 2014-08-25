@@ -1,0 +1,10 @@
+{
+  "errors": [
+    {
+      "object": "com.blueberry.User",
+      "field": "username",
+      "rejected-value": "f1l3-01",
+      "message": "Property [username] of class [class com.blueberry.User] with value [f1l3-01] must be unique"
+    }
+  ]
+}
