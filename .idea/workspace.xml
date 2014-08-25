@@ -2,17 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="acc72c1f-5227-4559-bda6-9edd6245365e" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/api-doc/blueberry.raml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/api-doc/login-error.sample" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/api-doc/user-error.sample" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/api-doc/user-new.sample" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/api-doc/user.sample" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/api-doc/user.schema" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/api-doc/users.sample" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/blueberry-grailsPlugins.iml" afterPath="$PROJECT_DIR$/blueberry-grailsPlugins.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/blueberry.iml" afterPath="$PROJECT_DIR$/blueberry.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/vcs.xml" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/grails-app/conf/Config.groovy" afterPath="$PROJECT_DIR$/grails-app/conf/Config.groovy" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="blueberry.iws" />
@@ -39,11 +29,21 @@
     <splitter split-orientation="horizontal" split-proportion="0.5">
       <split-first>
         <leaf>
-          <file leaf-file-name="blueberry.raml" pinned="false" current="true" current-in-tab="true">
+          <file leaf-file-name="blueberry.raml" pinned="false" current="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/api-doc/blueberry.raml">
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="1.0406361" vertical-offset="1061" max-vertical-offset="1965">
+                <state vertical-scroll-proportion="0.0" vertical-offset="1061" max-vertical-offset="1965">
                   <caret line="110" column="10" selection-start-line="110" selection-start-column="10" selection-end-line="110" selection-end-column="10" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="Config.groovy" pinned="false" current="true" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/grails-app/conf/Config.groovy">
+              <provider selected="true" editor-type-id="text-editor">
+                <state vertical-scroll-proportion="0.8630137" vertical-offset="1584" max-vertical-offset="2490">
+                  <caret line="156" column="81" selection-start-line="156" selection-start-column="81" selection-end-line="156" selection-end-column="81" />
                   <folding />
                 </state>
               </provider>
@@ -141,7 +141,7 @@
           <file leaf-file-name="login-error.sample" pinned="false" current="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/api-doc/login-error.sample">
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.15570934" vertical-offset="0" max-vertical-offset="578">
+                <state vertical-scroll-proportion="0.10135135" vertical-offset="0" max-vertical-offset="888">
                   <caret line="6" column="0" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
                   <folding />
                 </state>
@@ -192,7 +192,6 @@
         <option value="$PROJECT_DIR$/grails-app/conf/BuildConfig.groovy" />
         <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/system.properties" />
-        <option value="$PROJECT_DIR$/grails-app/conf/Config.groovy" />
         <option value="$PROJECT_DIR$/grails-app/conf/BootStrap.groovy" />
         <option value="$PROJECT_DIR$/grails-app/domain/com/blueberry/RoleType.groovy" />
         <option value="$PROJECT_DIR$/grails-app/domain/com/blueberry/User.groovy" />
@@ -205,6 +204,7 @@
         <option value="$PROJECT_DIR$/raml/user-update.sample" />
         <option value="$PROJECT_DIR$/raml/login-error.sample" />
         <option value="$PROJECT_DIR$/raml/blueberry.raml" />
+        <option value="$PROJECT_DIR$/grails-app/conf/Config.groovy" />
       </list>
     </option>
   </component>
@@ -256,6 +256,38 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="blueberry" />
+              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="blueberry" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="blueberry" />
+              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="grails-app" />
+              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="blueberry" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="blueberry" />
+              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="grails-app" />
+              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="conf" />
               <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -538,19 +570,24 @@
       <changelist id="acc72c1f-5227-4559-bda6-9edd6245365e" name="Default" comment="" />
       <created>1408807471206</created>
       <updated>1408807471206</updated>
-      <workItem from="1408807474087" duration="31629000" />
+      <workItem from="1408807474087" duration="31992000" />
     </task>
+    <task id="LOCAL-00001" summary="Added API Docs in RAML">
+      <created>1408928039180</created>
+      <updated>1408928039180</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="31629000" />
+    <option name="totallyTimeSpent" value="31992000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="53" y="22" width="1867" height="1058" extended-state="6" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Changes" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32978722" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32978722" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Persistence" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -598,6 +635,8 @@
     <option name="myTodoPanelSettings">
       <TodoPanelSettings />
     </option>
+    <MESSAGE value="Added API Docs in RAML" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added API Docs in RAML" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -970,14 +1009,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/grails-app/conf/Config.groovy">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="1556" max-vertical-offset="2460">
-          <caret line="96" column="28" selection-start-line="96" selection-start-column="28" selection-end-line="96" selection-end-column="64" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/grails-app/domain/com/blueberry/User.groovy">
       <provider editor-type-id="org.jetbrains.plugins.grails.perspectives.DomainClassesRelationsEditorProvider">
         <state />
@@ -1057,7 +1088,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/api-doc/login-error.sample">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.15570934" vertical-offset="0" max-vertical-offset="578">
+        <state vertical-scroll-proportion="0.10135135" vertical-offset="0" max-vertical-offset="888">
           <caret line="6" column="0" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
           <folding />
         </state>
@@ -1065,8 +1096,16 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/api-doc/blueberry.raml">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="1.0406361" vertical-offset="1061" max-vertical-offset="1965">
+        <state vertical-scroll-proportion="0.0" vertical-offset="1061" max-vertical-offset="1965">
           <caret line="110" column="10" selection-start-line="110" selection-start-column="10" selection-end-line="110" selection-end-column="10" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/grails-app/conf/Config.groovy">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.8630137" vertical-offset="1584" max-vertical-offset="2490">
+          <caret line="156" column="81" selection-start-line="156" selection-start-column="81" selection-end-line="156" selection-end-column="81" />
           <folding />
         </state>
       </provider>

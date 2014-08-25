@@ -153,6 +153,8 @@ grails.plugin.springsecurity.controllerAnnotations.staticRules = [
 	'/**/css/**':                     ['permitAll'],
 	'/**/images/**':                  ['permitAll'],
 	'/**/favicon.ico':                ['permitAll'],
-    '/dbconsole/**':                   ['permitAll']         // GTG - For H2 DBConsole
+    '/dbconsole/**':                  ['permitAll'],         // GTG - For H2 DBConsole
+    '/api-doc/**':                    ['permitAll'],         // GTG - For API DOC
+
 ]
 
