@@ -24,6 +24,7 @@ class User {
 		password        minSize: 5, blank: false
         email           email: true, nullable: true
         fullName        nullable: true
+        roleType        bindable: true
 	}
 
 	static mapping = {

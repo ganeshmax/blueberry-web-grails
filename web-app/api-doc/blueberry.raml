@@ -6,7 +6,7 @@ mediaType: application/json
 version: v1
 
 schemas:
-  - user: !include user.schema
+  - user: !include user/user.schema
 
 resourceTypes:
   - collection:
@@ -36,6 +36,9 @@ resourceTypes:
         responses:
           201:
             description: Success - <<resourcePathName|!singularize>> created
+            body:
+              application/json:
+                example: <<exampleItem>>
           422:
             description: Error - <<resourcePathName|!singularize>> validation errors
             body:
@@ -72,6 +75,9 @@ resourceTypes:
         responses:
           200:
             description: Success - <<resourcePathName|!singularize>> updated
+            body:
+              application/json:
+                example: <<exampleItem>>
           404:
             description: Error - <<resourcePathName|!singularize>> not found
           422:
@@ -87,9 +93,9 @@ resourceTypes:
             example: JSESSIONID=64BDEB6C6095F84785C5BBF0BB35668B
         responses:
           204:
-            description: Success- <<resourcePathName|!singularize>> deleted
+            description: Success - <<resourcePathName|!singularize>> deleted
           404:
-            description: Error- <<resourcePathName|!singularize>> not found
+            description: Error - <<resourcePathName|!singularize>> not found
 
   - readOnlyCollection:
       description: Collection of <<resourcePathName>>
@@ -124,7 +130,7 @@ resourceTypes:
         description: Error - Forbidden
         body:
           application/json:
-            example: !include login-error.sample
+            example: !include login/login-error.sample
 
 /logout:
   post:
@@ -136,13 +142,14 @@ resourceTypes:
 /users:
   type:
     collection:
-      exampleCollection:    !include users.sample
-      exampleNewItem:       !include user-new.sample
-      exampleItemError:     !include user-error.sample
+      exampleCollection:    !include user/users.sample
+      exampleNewItem:       !include user/user-new.sample
+      exampleItem:          !include user/user.sample
+      exampleItemError:     !include user/user-error.sample
 
   /{id}:
     type:
       collection-item:
-        exampleItem:        !include user.sample
-        exampleItemError:   !include user-error.sample
+        exampleItem:        !include user/user.sample
+        exampleItemError:   !include user/user-error.sample
 

@@ -34,7 +34,7 @@ class UserController {
             user.save()
 
             UserRole.create user, role
-            render status: CREATED
+            respond user, status: CREATED
         }
     }
 
@@ -47,7 +47,7 @@ class UserController {
                 respond user.errors
             } else {
                 user.save flush:true
-                render status:OK
+                respond user, status:OK
             }
         }
     }

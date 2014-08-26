@@ -132,13 +132,10 @@ grails.plugin.springsecurity.filterChain.chainMap = [
     '/**':      'JOINED_FILTERS'                // Form Auth - For REST Without login and success URL
 ]
 
-
 // GTG - Spring Security - Configuration
 grails.plugin.springsecurity.apf.filterProcessesUrl = '/login';
 grails.plugin.springsecurity.apf.usernameParameter = 'username';
 grails.plugin.springsecurity.apf.passwordParameter = 'password';
-
-grails.plugin.springsecurity.logout.postOnly = false
 grails.plugin.springsecurity.logout.filterProcessesUrl = '/logout'
 
 // Added by the Spring Security Core plugin:

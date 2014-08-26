@@ -1,0 +1,12 @@
+{
+  "class": "com.blueberry.User",
+  "id": 4,
+  "accountExpired": false,
+  "accountLocked": false,
+  "email": "firstlast1@email.com",
+  "enabled": true,
+  "fullName": "First1 Last1",
+  "password": "$2a$10$HEhtxcqwxQ4Dz0OSMQCaauJHJvQYaLF0r2RyhzgU.9B7FXv/R.uUy",
+  "passwordExpired": false,
+  "username": "firstlast1"
+}
